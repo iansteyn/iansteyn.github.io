@@ -1,5 +1,6 @@
 /* Main stylesheet for now */
 
+/* FONTS AND BODY */
 body {
     font-family: "Radio Canada Big", sans-serif; 
 }
@@ -9,6 +10,7 @@ h1, h2, h3, h4 {
 }
 
 body {
+    color: white;
     background-image: url(../images/background-sky.jpg);
     background-repeat:no-repeat;
     background-position: bottom;
@@ -17,6 +19,33 @@ body {
     overflow-x: hidden;
     height: 100vh;
 }
+
+/* INLINE STUFF */
+a {
+    color: rgb(27, 27, 125);
+    font-style: italic;
+    text-decoration-line: none;
+}
+a:hover {
+    color: white;
+    text-decoration-line: underline;
+}
+
+/* MAJOR CONTAINERS */
+header {
+    text-align: center;
+    font-style: italic;
+}
+
+main {
+    background: #ffffff10;
+    width: 60%;
+    margin: auto;
+    padding: 2em;
+    border-radius: 0.3em;
+}
+
+
 
 img.social-icon {
     width: 1em;

@@ -8,6 +8,16 @@ h1, h2, h3, h4 {
     font-family: "Roboto Serif", Georgia, serif;
 }
 
+body {
+    background-image: url(../images/background-sky.jpg);
+    background-repeat:no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+    overflow-x: hidden;
+    height: 100vh;
+}
+
 img.social-icon {
     width: 1em;
     height: 1em;

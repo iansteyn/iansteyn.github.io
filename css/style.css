@@ -1,1 +1,15 @@
 /* Main stylesheet for now */
+
+body {
+    font-family: "Radio Canada Big", sans-serif; 
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto Serif", Georgia, serif;
+}
+
+img.social-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}

@@ -6,6 +6,7 @@
 
 /* FONTS AND BODY */
 body {
+    color: white;
     font-family: "Radio Canada Big", sans-serif; 
 }
 
@@ -13,15 +14,13 @@ h1, h2, h3, h4 {
     font-family: "Roboto Serif", Georgia, serif;
 }
 
-body {
-    color: white;
-    background-image: url(../images/background-sky.jpg);
-    background-repeat:repeat;
-    background-position: bottom;
+/* BACKGROUND */
+html {
+    background: url(../images/background-sky.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-
-    overflow-x: hidden;
-    height: 100vh;
 }
 
 /* INLINE STUFF */
@@ -48,6 +47,10 @@ main {
     padding: 2em;
     border-radius: 0.3em;
 }
+
+/* footer {
+    color: rgba(255, 255, 255, 0.836);
+} */
 
 /* OTHER */
 img.social-icon {

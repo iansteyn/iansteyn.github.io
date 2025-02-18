@@ -1,4 +1,8 @@
 /* Main stylesheet for now */
+:root {
+    /* I like this colour, keep it for later */
+    --ians-dark-blue: rgb(27, 27, 125); 
+}
 
 /* FONTS AND BODY */
 body {
@@ -22,12 +26,12 @@ body {
 
 /* INLINE STUFF */
 a {
-    color: rgb(27, 27, 125);
+    color: white;
     font-style: italic;
     text-decoration-line: none;
 }
 a:hover {
-    color: white;
+    color: var(--ians-dark-blue);
     text-decoration-line: underline;
 }
 

@@ -4,7 +4,7 @@
     --ians-dark-blue: rgb(27, 27, 125); 
 }
 
-/* FONTS AND BODY */
+/* FONTS/TEXT */
 body {
     color: white;
     font-family: "Radio Canada Big", sans-serif; 
@@ -16,6 +16,7 @@ h1, h2, h3, h4 {
 
 /* BACKGROUND */
 html {
+    /* Thanks CSS Tricks: https://css-tricks.com/perfect-full-page-background-image/ */
     background: url(../images/background-sky.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -35,6 +36,7 @@ a:hover {
 }
 
 /* MAJOR CONTAINERS */
+
 header {
     text-align: center;
     font-style: italic;
@@ -48,9 +50,11 @@ main {
     border-radius: 0.3em;
 }
 
-/* footer {
+footer {
     color: rgba(255, 255, 255, 0.836);
-} */
+    font-style: italic;
+    text-align: center;
+}
 
 /* OTHER */
 img.social-icon {

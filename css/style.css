@@ -4,8 +4,9 @@
     --ians-dark-blue: rgb(27, 27, 125); 
 }
 
-/* FONTS AND BODY */
+/* FONTS/TEXT */
 body {
+    color: white;
     font-family: "Radio Canada Big", sans-serif; 
 }
 
@@ -13,16 +14,28 @@ h1, h2, h3, h4 {
     font-family: "Roboto Serif", Georgia, serif;
 }
 
-body {
-    color: white;
-    background-image: url(../images/background-sky.jpg);
-    background-repeat:repeat;
-    background-position: bottom;
+/* BACKGROUND */
+html {
+    /* Thanks CSS Tricks: https://css-tricks.com/perfect-full-page-background-image/ */
+    background: url(../images/background-sky.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-
-    overflow-x: hidden;
-    height: 100vh;
 }
+
+/* 
+What do I actually want from the bg image?
+- always centered
+- always some trees at the bottom of the page (not neccesarily viewport)
+- content can never cross over that part of the image
+- doesn't distort, but sides can be cut off
+
+- essentially, I want zoom to cause cropping (so the top and bottom of the image stay at top and bottom of page)
+  instead of normal scaling (but image should still take up full width)
+- maybe this requires JS
+
+*/
 
 /* INLINE STUFF */
 a {
@@ -36,6 +49,13 @@ a:hover {
 }
 
 /* MAJOR CONTAINERS */
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr 25%;
+    align-items: start;
+}
+
 header {
     text-align: center;
     font-style: italic;
@@ -44,9 +64,18 @@ header {
 main {
     background: #ffffff10;
     width: 60%;
-    margin: auto;
+    margin: 0 auto;
     padding: 2em;
     border-radius: 0.3em;
+}
+
+footer {
+    background-color: #00000058;
+    color: rgba(255, 255, 255, 0.836);
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: center;
+    align-self: end;
 }
 
 /* OTHER */

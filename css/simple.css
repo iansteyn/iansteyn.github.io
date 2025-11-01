@@ -1,0 +1,10 @@
+/* Just some super simple CSS stuff to help me differentiate sections of my website */
+
+header {
+    background-color: rgb(186, 255, 252);
+}
+
+footer {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}

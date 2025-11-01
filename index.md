@@ -6,4 +6,8 @@ layout: page
 title: Home
 ---
 
-This is the home page. Nothing is here yet tho!
+## About me
+
+Computer science student and aspiring software developer.
+
+Actively looking for 4-8 month Co-op positions starting in January 2026.

@@ -18,14 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Ian's Website
+title: Ian Steyn
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Computer science student and aspiring software developer.
+  Actively looking for 4-8 month Co-op positions starting in January 2026.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://iansteyn.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  iansteyn
+
+# Socials
+github_username:  "iansteyn"
+youtube_username: "@fish42"
 
 # Build settings
 plugins:

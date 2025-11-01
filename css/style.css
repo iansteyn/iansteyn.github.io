@@ -1,5 +1,21 @@
-/* Just some super simple CSS stuff to help me differentiate sections of my website */
+/* FONTS */
+body {
+    font-family: "Radio Canada Big", sans-serif; 
+}
 
+h1, h2, h3, h4 {
+    font-family: "Roboto Serif", Georgia, serif;
+    font-weight: bold;
+}
+
+h1 { font-size: 2em }
+h2 { font-size: 1.5em }
+h3 { font-size: 1.17em }
+h4 { font-size: 1em }
+h5 { font-size: 0.83em }
+h6 { font-size: 0.67em }
+
+/* LARGE SECTIONS */
 header {
     background-color: rgb(186, 255, 252);
 }
@@ -9,10 +25,8 @@ footer {
     background-color: rgb(0, 0, 0);
 }
 
-body {
-    font-family: "Radio Canada Big", sans-serif; 
-}
-
-h1, h2, h3, h4 {
-    font-family: "Roboto Serif", Georgia, serif;
+/* LISTS */
+ol, ul {
+    list-style-type: disc;
+    list-style-position: outside;
 }

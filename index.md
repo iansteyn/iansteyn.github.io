@@ -11,3 +11,9 @@ title: Home
 Computer science student and aspiring software developer.
 
 Actively looking for 4-8 month Co-op positions starting in January 2026.
+
+## Links
+
+{% for social in site.data.socials %}
+- {{ social.platform }}: [{{ social.username }}]({{ social.url }})
+{% endfor %}

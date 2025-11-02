@@ -1,3 +1,8 @@
+/*COLORS */
+:root {
+    --ians-dark-blue: rgb(27, 27, 125); 
+}
+
 /* FONTS */
 body {
     font-family: "Radio Canada Big", sans-serif;
@@ -61,11 +66,16 @@ ol, ul {
 }
 
 /* --------------------------------------------------- */
-/* .navbar {
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-} */
+    align-content: baseline;
+}
+
+.navlinks {
+    height:fit-content;
+}
 
 .article {
     min-width: max(fit-content, 75ch);

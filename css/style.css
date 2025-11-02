@@ -90,30 +90,20 @@ a:hover {
 /* || SITE-WIDE */
 
 .site-wrapper {
+    /* These styles could be on body, but I'm scared of applying stuff like this to body */
     min-height: 100vh;
     min-height: 100svh;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
+/* <<< */
+/* Site Header */
 .site-header {
     color: white;
     background-color: var(--primary);
     padding: 1rem;
 }
-
-.main {
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-}
-
-.site-footer {
-    color: white;
-    background-color: var(--background-dark);
-    padding: 1rem;
-}
-
 
 .navbar {
     display: flex;
@@ -135,6 +125,22 @@ a:hover {
 .nav-links a {
     color: white;
 }
+/* >>> */
+
+/* Site Footer */
+.site-footer {
+    color: white;
+    background-color: var(--background-dark);
+    padding: 1rem;
+}
+
+/* Main Content */
+.main {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
 
 /* --------------------------------------------------- */
 .article {

@@ -112,7 +112,6 @@ a:hover {
     color: white;
     background-color: var(--background-dark);
     padding: 1rem;
-    align-self: self-end;
 }
 
 

@@ -19,16 +19,17 @@
     */
 }
 
+/* ---------------------------------------------------------------------------------------------- */
 /* || GENERAL STYLES */
 body {
     color: var(--text-primary);
     background-color: var(--background-primary);
 
-    min-height: 100vh;
-    min-height: 100svh;
-
     font-family: "Radio Canada Big", sans-serif;
     line-height: 1.3;
+
+    min-height: 100vh;
+    min-height: 100svh;
 }
 
 h1, h2, h3, h4 {
@@ -40,18 +41,39 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 
-h1 { font-size: 2rem; margin: 1.3rem 0; }
-h2 { font-size: 1.5rem; margin: 1.2rem 0; }
-h3 { font-size: 1.17rem }
-h4 { font-size: 1rem;  }
-p { font-size: 1rem; margin: 1rem 0;}
-h5 { font-size: 0.83rem }
-h6 { font-size: 0.67rem }
+h1 {
+    font-size: 2rem;
+    margin: 1.3rem 0; 
+}
+h2 {
+    font-size: 1.5rem;
+    margin: 1.2rem 0;
+}
+h3 {
+    font-size: 1.17rem
+}
+h4 {
+    font-size: 1rem;
+}
+h5 {
+    font-size: 0.83rem
+}
+h6 {
+    font-size: 0.67rem
+}
 
+p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+/* todo: ol shouldn't be disc-type */
 ol, ul {
     line-height: 1.5em;
+
     margin: 1em 0;
     padding: 0 0 0 2.5em;
+
     list-style-type: disc;
     list-style-position: outside;
 }
@@ -61,10 +83,10 @@ a {
     text-decoration: none; 
 }
 a:hover {
-    color: var(--secondary);
     text-decoration: underline;
 }
 
+/* ------------------------------------------------------------------------------------------------------- */
 /* || SITE-WIDE */
 
 .content-wrapper {

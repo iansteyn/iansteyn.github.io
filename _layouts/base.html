@@ -32,11 +32,13 @@
   </head>
 
   <body>
-    {% include header.html %}
-    <main>
-      {{ content }}
-    </main>
-    {% include footer.html %}
+    <div class="content-wrapper">
+      {% include header.html %}
+      <main class="main">
+        {{ content }}
+      </main>
+      {% include footer.html %}
+    </div>
   </body>
 
 </html>

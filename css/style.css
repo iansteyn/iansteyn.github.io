@@ -21,13 +21,32 @@ h5 { font-size: 0.83rem }
 h6 { font-size: 0.67rem }
 
 /* LARGE SECTIONS */
-header {
-    background-color: rgb(186, 255, 252);
+body {
+    min-height: 100vh;
+    min-height: 100svh;
 }
 
-footer {
+.content-wrapper {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.site-header {
+    background-color: rgb(186, 255, 252);
+    padding: 1rem;
+}
+
+.main {
+    padding: 1rem;
+}
+
+.site-footer {
     color: white;
     background-color: rgb(0, 0, 0);
+    padding: 1rem;
+    align-self: self-end;
 }
 
 /* LISTS */
@@ -40,9 +59,12 @@ ol, ul {
 }
 
 /* --------------------------------------------------- */
+.navbar {
+    display: flex;
+}
 
-article.container {
+/* article.container {
     margin: 2em;
     align-items:center;
     max-width: 75ch;
-}
+} */

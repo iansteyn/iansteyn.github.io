@@ -22,7 +22,9 @@ Order of declarations inside a block:
         font-family, font-size, line-height, text-align */
 
     /* Display & Box Model:
-        display, overflow, box-sizing, width, height, padding, border, margin */
+        width, height
+        padding, border, margin 
+        display, overflow, box-sizing */
 
     /* Positioning:
         position, z-index, top, right, bottom, left */

@@ -1,0 +1,24 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: page
+# title: Home
+---
+
+<section id="about-me">
+  <h2>About me</h2>
+  <p>
+    Computer science student and aspiring software developer.
+    Actively looking for 4-8 month Co-op positions starting in January 2026.
+  </p>
+</section>
+
+<section id="links">
+  <h2>Links</h2>
+  <ul>
+    {% for social in site.data.socials %}
+      <li>{{ social.platform }}: <a href="{{ social.url }}">{{ social.username }}</a></li>
+    {% endfor %}
+  </ul>
+</section>

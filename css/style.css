@@ -7,10 +7,15 @@
 
     --secondary: #de006b;
 
+    --other-secondary-option: #182422;
+
+    --surface: #ffffffee;
     --background-primary: white;
     --background-dark: #000a20;
+    --surface-transparent: #ffffffdb;
 
-    --text-primary: var(--background-dark);
+    --text-primary: var(--primary-variant);
+    --text-contrast: white;
     --text-link: var(--primary);
 
     /*
@@ -26,7 +31,7 @@
 /* || GENERAL STYLES */
 body {
     color: var(--text-primary);
-    background-color: var(--background-primary);
+    background-color: var(--primary);
 
     font-family: var(--font-family-body);
     line-height: 1.3;
@@ -109,8 +114,8 @@ a:hover {
 /* <<< */
 /* Site Header */
 .navbar {
-    color: white;
-    background-color: var(--primary);
+    color: var(--text-contrast);
+    background-color: var(--primary-variant);
 
     padding: 1rem 2rem;
     
@@ -136,15 +141,15 @@ a:hover {
 }
 
 .navbar__link {
+    color: var(--text-contrast);
     font-family: var(--font-family-display);
     font-size: 1.2em;
-    color: white;
 }
 /* >>> */
 
 /* Site Footer */
 .site-footer {
-    color: white;
+    color: var(--text-contrast);
     background-color: var(--background-dark);
     padding: 1rem;
 
@@ -153,7 +158,6 @@ a:hover {
     flex-wrap: wrap;
 }
 .site-footer__section {
-    color: white;
     margin: 1em;
 }
 .site-footer__copyright {
@@ -163,6 +167,13 @@ a:hover {
 
 /* Main Content */
 .main {
+    /* Thanks CSS Tricks: https://css-tricks.com/perfect-full-page-background-image/ */
+    background: url(/assets/images/background-lake.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -171,7 +182,11 @@ a:hover {
 
 /* --------------------------------------------------- */
 .article {
-    min-width: max(fit-content, 75ch);
+    background: var(--surface);
+    min-width: max(fit-content, 75ch); /*INVALID */
     max-width: 60ch;
+
+    margin: 2em 0;
     padding: 1rem 2rem;
+    border-radius: 5px;
 }

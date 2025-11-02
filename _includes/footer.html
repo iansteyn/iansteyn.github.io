@@ -1,7 +1,17 @@
 <footer class="site-footer">
-  <p>&copy; Ian Steyn 2025</p>
-  {% for social in site.data.socials %}
-    <a href="{{ social.url }}">{{ social.platform }}</a>
-  {% endfor %}
-  </ul>
+
+  <section class="site-footer__section">
+    <h4>Copyright</h4>
+    <p class="site-footer__copyright">&copy; 2025 Ian Steyn</p>
+  </section>
+
+  <section class="site-footer__section">
+    <h4>Socials</h4>
+    <ul class="ul--bulletless">
+      {% for social in site.data.socials %}
+        <li><a href="{{ social.url }}">{{ social.platform }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+
 </footer>

@@ -1,5 +1,6 @@
 /*COLORS */
 :root {
+    --sky: #3771d2;
     --ians-dark-blue: rgb(27, 27, 125); 
 }
 
@@ -39,7 +40,8 @@ body {
 }
 
 .site-header {
-    background-color: rgb(186, 255, 252);
+    color: white;
+    background-color: var(--sky);
     padding: 1rem;
 }
 
@@ -65,16 +67,33 @@ ol, ul {
     list-style-position: outside;
 }
 
+a {
+    color: var(--sky);
+    text-decoration: none; 
+}
+a:hover {
+    text-decoration: underline;
+}
+
 /* --------------------------------------------------- */
 .navbar {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: baseline;
 }
 
+.nav-logo {
+    font-style: italic;
+    margin: 0;
+}
+
 .navlinks {
     height:fit-content;
+}
+.nav-links a {
+    color: white;
 }
 
 .article {

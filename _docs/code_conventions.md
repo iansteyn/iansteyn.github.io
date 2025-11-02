@@ -34,3 +34,6 @@ Order of declarations inside a block:
 }
 
 ```
+
+Naming Methodology:
+[BEM](https://en.bem.info/methodology/quick-start/)

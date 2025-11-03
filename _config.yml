@@ -20,7 +20,7 @@
 
 title: Ian Steyn
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi! I'm Ian, a comp sci student, aspiring software developer, and general creative type.
+  Hi! I'm Ian, a CS student, aspiring software developer, and digital media enthusiast.
   This is my home on the web.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://iansteyn.com" # the base hostname & protocol for your site, e.g. http://example.com

@@ -1,86 +1,192 @@
-/* Main stylesheet for now */
+/* TODO: figure out code styling */
+
+/* COLORS and FONTS */
 :root {
-    /* I like this colour, keep it for later */
-    --ians-dark-blue: rgb(27, 27, 125); 
+    --primary: #3771d2;
+    --primary-variant: #1b1b7d;
+
+    --secondary: #de006b;
+
+    --other-secondary-option: #182422;
+
+    --surface: #ffffffee;
+    --background-primary: white;
+    --background-dark: #000a20;
+    --surface-transparent: #ffffffdb;
+
+    --text-primary: var(--primary-variant);
+    --text-contrast: white;
+    --text-link: var(--primary);
+
+    /*
+    NOTE: what we called "background-primary" and "background-secondary" in Blogstar
+    should really have been "background" and "surface"
+    */
+
+    --font-family-display: "Roboto Serif", Georgia, serif;
+    --font-family-body: "Radio Canada Big", sans-serif;
 }
 
-/* FONTS/TEXT */
+/* ---------------------------------------------------------------------------------------------- */
+/* || GENERAL STYLES */
 body {
-    color: white;
-    font-family: "Radio Canada Big", sans-serif; 
+    color: var(--text-primary);
+    background-color: var(--primary);
+
+    font-family: var(--font-family-body);
+    line-height: 1.3;
+
+    min-height: 100vh;
+    min-height: 100svh;
 }
 
-h1, h2, h3, h4 {
-    font-family: "Roboto Serif", Georgia, serif;
+h1, h2, h3 {
+    font-family: var(--font-family-display);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.2;
 }
 
-/* BACKGROUND */
-html {
+h1 {
+    font-size: 2rem;
+    margin: 1.3rem 0; 
+}
+h2 {
+    font-size: 1.5rem;
+    margin: 1.2rem 0;
+}
+h3 {
+    font-size: 1.17rem
+}
+h4 {
+    font-size: 1rem;
+}
+h5 {
+    font-size: 0.83rem
+}
+h6 {
+    font-size: 0.67rem
+}
+
+p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+/* todo: ol shouldn't be disc-type */
+ol, ul {
+    line-height: 1.5em;
+
+    margin: 1em 0;
+    padding: 0 0 0 2.5em;
+
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none; 
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* || UTILITIES */
+.ul--bulletless {
+    padding: 0;
+    list-style: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* || SITE-WIDE */
+
+.site-wrapper {
+    /* These styles could be on body, but I'm scared of applying stuff like this to body */
+    min-height: 100vh;
+    min-height: 100svh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* <<< */
+/* Site Header */
+.navbar {
+    color: var(--text-contrast);
+    background-color: var(--primary-variant);
+
+    padding: 1rem 2rem;
+    
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: auto auto; */
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    color: inherit;
+    font-style: italic;
+    text-wrap: nowrap;
+    margin: 0;
+}
+
+.navbar__nav {
+    /* height: calc(2rem*1.2); */
+    align-self: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1em;
+}
+
+.navbar__link {
+    color: var(--text-contrast);
+    font-family: var(--font-family-display);
+    font-size: 1.2em;
+}
+/* >>> */
+
+/* Site Footer */
+.site-footer {
+    color: var(--text-contrast);
+    background-color: var(--background-dark);
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.site-footer__section {
+    margin: 1em;
+}
+.site-footer__copyright {
+    font-style: italic;
+}
+
+
+/* Main Content */
+.main {
     /* Thanks CSS Tricks: https://css-tricks.com/perfect-full-page-background-image/ */
-    background: url(../images/background-sky.jpg) no-repeat center center fixed;
+    background: url(/assets/images/background-lake.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
-/* 
-What do I actually want from the bg image?
-- always centered
-- always some trees at the bottom of the page (not neccesarily viewport)
-- content can never cross over that part of the image
-- doesn't distort, but sides can be cut off
 
-- essentially, I want zoom to cause cropping (so the top and bottom of the image stay at top and bottom of page)
-  instead of normal scaling (but image should still take up full width)
-- maybe this requires JS
+/* --------------------------------------------------- */
+.article {
+    background: var(--surface);
+    min-width: max(fit-content, 75ch); /*INVALID */
+    max-width: 60ch;
 
-*/
-
-/* INLINE STUFF */
-a {
-    color: white;
-    font-style: italic;
-    text-decoration-line: none;
-}
-a:hover {
-    color: var(--ians-dark-blue);
-    text-decoration-line: underline;
-}
-
-/* MAJOR CONTAINERS */
-body {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr 25%;
-    align-items: start;
-}
-
-header {
-    text-align: center;
-    font-style: italic;
-}
-
-main {
-    background: #ffffff10;
-    width: 60%;
-    margin: 0 auto;
-    padding: 2em;
-    border-radius: 0.3em;
-}
-
-footer {
-    background-color: #00000058;
-    color: rgba(255, 255, 255, 0.836);
-    font-style: italic;
-    font-size: 0.8em;
-    text-align: center;
-    align-self: end;
-}
-
-/* OTHER */
-img.social-icon {
-    width: 1em;
-    height: 1em;
-    vertical-align: middle;
+    margin: 2em 0;
+    padding: 1rem 2rem;
+    border-radius: 5px;
 }

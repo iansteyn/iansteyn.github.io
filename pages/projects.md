@@ -4,6 +4,11 @@ title: Projects
 permalink: /projects/
 ---
 
+
+#### University Software Engineering Projects
+- does mixing markdown and html work?
+- bullet 2
+
 <p>
   Showcase coming soon. For now, see:
 </p>

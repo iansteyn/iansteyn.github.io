@@ -74,6 +74,14 @@ p {
     margin: 1rem 0;
 }
 
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
 /* todo: ol shouldn't be disc-type */
 ol, ul {
     line-height: 1.5em;

@@ -5,8 +5,8 @@ permalink: /projects/
 ---
 
 ### Co-op Projects
-- **PracticeHere.ca Website Redesign** - 1st Co-op Term Final Project ([YouTube](https://youtu.be/RqU7Yf1YIVI))
-- **Codfp.ca Website Restructure** - In-progress Information Architecture and UI Design project ([YouTube](https://youtu.be/Y0Z8xh1dFbU))
+- **[PracticeHere.ca](https://practicehere.ca) Website Redesign** - 1st Co-op Term Final Project ([YouTube](https://youtu.be/RqU7Yf1YIVI))
+- **[Codfp.ca](https://codfp.ca) Website Restructure** - In-progress Information Architecture and UI Design project ([YouTube](https://youtu.be/Y0Z8xh1dFbU))
 
 ### Some of my best university software engineering projects
 - **Blogstar** - LAMP-stack Blogging Website ([GitHub](https://github.com/iansteyn/blogstar), [YouTube](https://www.youtube.com/watch?v=_AQO8AVgzZA))

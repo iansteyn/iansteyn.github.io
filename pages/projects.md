@@ -15,7 +15,8 @@ permalink: /projects/
 
 ### Some Creative Projects
 - **Floater** - Unity-2D/C# Platformer Videogame Demo ([GitHub](https://github.com/iansteyn/floater-demo), [YouTube](https://youtu.be/wifr-MyAF-Y))
-- **Invest In Your Humanity** - Sonic Pi Coded Music: ([GitHub](https://github.com/iansteyn/invest-in-your-humanity))
+- **Invest In Your Humanity** - Sonic Pi Coded Music ([GitHub](https://github.com/iansteyn/invest-in-your-humanity))
+- **InDesign Book Project** - Book Cover Design + Typesetting & Layout ([PDF](/assets/pdfs/indesign_book_project.pdf))
 
 ---
 

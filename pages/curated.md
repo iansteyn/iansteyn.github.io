@@ -2,7 +2,7 @@
 layout: page
 title: Curated
 permalink: /curated/
-description: A little collection of cool stuff I didn't make.
+description: A little collection of cool web stuff I didn't make.
 ---
 
 {{ page.description }}

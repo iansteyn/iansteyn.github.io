@@ -191,8 +191,8 @@ a:hover {
 /* --------------------------------------------------- */
 .article {
     background: var(--surface);
-    min-width: max(fit-content, 75ch); /*INVALID */
-    max-width: 60ch;
+
+    width: min(650px, 100%);
 
     margin: 2em 0;
     padding: 1rem 2rem;

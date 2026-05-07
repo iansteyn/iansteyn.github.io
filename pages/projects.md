@@ -11,6 +11,7 @@ permalink: /projects/
 
 ### Some of my best university software engineering projects
 - **Blogstar** - LAMP-stack Blogging Website ([GitHub](https://github.com/iansteyn/blogstar), [YouTube](https://www.youtube.com/watch?v=_AQO8AVgzZA))
+- **Directed Studies in Software Maintenance** - Maintenance of UBCO Database course's custom Python/SQL PrairieLearn modules
 - **Ogo** - Android Social Mobile App Prototype ([GitHub](https://github.com/iansteyn/ogo), [YouTube](https://youtube.com/playlist?list=PLyH_2dU5t6b08Yn4d320zxyPgz6Icdqvl&si=Pt6z-m5T_XX_TvJ_))
 - **Thunder Down Under** - Flask-based Weather Data Visualization Web App ([GitHub](https://github.com/iansteyn/thunder-down-under), [YouTube](https://youtu.be/9plB7PrEBqU))
 

@@ -129,7 +129,7 @@ a:hover {
     
     display: flex;
     flex-wrap: wrap;
-    /* grid-template-columns: auto auto; */
+    gap: 1em;
     justify-content: space-between;
 }
 

@@ -3,27 +3,27 @@ layout: page
 title: Cool Stuff
 permalink: /cool-stuff/
 description: A little library of cool stuff I didn't make.
-
-categories:
-- resource
-- friend
-- game
-- other
 ---
 
 {{ page.description }}
 
-## Resources
+## Cool Resources
 
-## Games
+- [Semantic Versioning](https://semver.org/)
+- [HTTP Cats](https://http.cat/)
+- [Data Structure Visualization](https://cmps-people.ok.ubc.ca/ylucet/DS/Algorithms.html)
 
-## Friends
-Some friends of mine who also have their own websites!
+## Cool Games
 
-{% assign links = site.data.cool-stuff | where: "tag", "friend" %}
+- [enclose.horse](https://enclose.horse/)
+- [neal.fun](https://neal.fun/)
 
-{%- for link in links %}
-- [{{ link.name }}]({{ link.url }})
-{%- endfor %}
+## Cool Friends
 
-## Blogs and other cool stuff
+- [lucasslunt.com](https://lucasslunt.com)
+- [rowanfortier.com](https://rowanfortier.com)
+
+## Cool Blogs and other cool stuff
+
+- [MeyerWeb](https://meyerweb.com/)
+- [wnoadiarwb](https://wnoadiarwb.us/)

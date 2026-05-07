@@ -202,3 +202,12 @@ a:hover {
     padding: 1rem 2rem;
     border-radius: 5px;
 }
+
+.article--response-code {
+    text-align: center;
+    width: fit-content;
+}
+
+.h1--response-code {
+    font-size: 8rem;
+}

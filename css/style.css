@@ -153,6 +153,9 @@ a:hover {
     font-family: var(--font-family-display);
     font-size: 1.2em;
 }
+.navbar__link--active {
+    text-decoration: underline;
+}
 /* >>> */
 
 /* Site Footer */

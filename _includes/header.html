@@ -1,11 +1,19 @@
 <header class="navbar">
   <h1 class="navbar__logo">
-      <a class="navbar__link" href="/"><>< Ian Steyn</a>
+    <a class="navbar__link" href="/"><>< Ian Steyn</a>
   </h1>
   <nav class="navbar__nav">
-      <a class="navbar__link" href="/">Home</a>
-      <a class="navbar__link" href="/about/">About</a>
-      <a class="navbar__link" href="/projects/">Projects</a>
-      <a class="navbar__link" href="/curated/">Curated</a>
+
+    {% for link in site.data.nav_links %}
+
+        {% assign active_state = "" %}
+        {% if page.url == link.url %}
+            {% assign active_state = "navbar__link--active" %}
+        {% endif %}
+
+        <a class="navbar__link {{ active_state }}" href="{{ link.url }}">{{ link.name }}</a>
+
+    {% endfor %}
+
   </nav>
 </header>

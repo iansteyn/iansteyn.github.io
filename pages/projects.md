@@ -5,6 +5,11 @@ permalink: /projects/
 ---
 
 ### Co-op Projects
+
+#### Customer Support Engineer Co-op
+- **High Low Piccolo with Ian Steyn** - Podcast ([Podcast Website](https://pod.iansteyn.com))
+
+#### Website Coordinator Co-op
 - **[PracticeHere.ca](https://practicehere.ca) Website Redesign** - 1st Co-op Term Side Project ([YouTube](https://youtu.be/RqU7Yf1YIVI))
 - **[Codfp.ca](https://codfp.ca) Website Restructure** - 1st & 2nd Co-op Terms Main Project ([YouTube](https://youtu.be/kmh0GEx7r-A))
 - **SquareSpace to Wix Blog Converter** - Python script ([GitHub](https://github.com/iansteyn/squarespace-to-wix-blog-converter))
